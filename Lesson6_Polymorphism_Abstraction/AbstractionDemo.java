@@ -36,3 +36,25 @@ class SmartSpeaker extends SmartDevice {
         System.out.println(deviceName + " is now playing music.");
     }
 }
+public class AbstractionDemo {
+
+    public static void main(String[] args) {
+
+        SmartDevice device1 = new SmartLight("Living Room Light");
+        SmartDevice device2 = new SmartSpeaker("Bedroom Speaker");
+
+        System.out.println("SMART HOME DEVICE SYSTEM");
+        System.out.println("=========================");
+        System.out.println("Device Activation");
+        System.out.println("-------------------------");
+
+        device1.activate();
+
+        System.out.println();
+
+        device2.activate();
+
+        System.out.println("-------------------------");
+        System.out.println("All devices have been processed.");
+    }
+}
