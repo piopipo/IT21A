@@ -21,7 +21,17 @@ class Programmer extends Employee {
         System.out.println(name + " is developing and debugging software.");
     }
 }
+class Designer extends Employee {
 
+    Designer(String name) {
+        super(name);
+    }
+
+    @Override
+    void performWork() {
+        System.out.println(name + " is creating user interfaces and visual designs.");
+    }
+}
 public class PolymorphismDemo {
     
 }
