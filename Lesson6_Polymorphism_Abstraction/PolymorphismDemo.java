@@ -33,5 +33,20 @@ class Designer extends Employee {
     }
 }
 public class PolymorphismDemo {
-    
+    public static void main(String[] args) {
+
+        Employee employee1 = new Programmer("Alex");
+        Employee employee2 = new Designer("Jamie");
+
+        System.out.println("EMPLOYEE WORK MANAGEMENT SYSTEM");
+        System.out.println("================================");
+        System.out.println("Employee Task Assignments");
+        System.out.println("--------------------------------");
+
+        employee1.performWork();
+        employee2.performWork();
+
+        System.out.println("--------------------------------");
+        System.out.println("Employee task assignments completed.");
+    }
 }
